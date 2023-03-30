@@ -5,7 +5,7 @@ def download(url, out_path='.'):
     wget.download(url, out=out_path)
 
 def pathCheck(path):
-    if not os.isdir(path):
+    if not os.path.isdir(path):
         os.makedirs(path)
 
 if __name__ == "__main__":
